@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "pytorch-by-example"
+version = "0.1.0"
+description = "PyTorch by Example"
+authors = ["Michael Madden <mikemadden42@icloud.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.4.1"
+torchvision = "^0.19.1"
+torchaudio = "^2.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+lint.select = [
+    # Pyflakes
+    "F",
+    # Pycodestyle
+    "E",
+    "W",
+    # isort
+    "I",
+    # flake8-bandit
+    "S",
+    # flake8-bugbear
+    "B",
+    # Pylint
+    "PL"
+]
+lint.ignore = [
+    # tests use assert
+    "S101"
+]
