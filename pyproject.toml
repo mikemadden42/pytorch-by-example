@@ -12,7 +12,6 @@ torch = "^2.5.1"
 torchvision = "^0.20.1"
 torchaudio = "^2.5.1"
 
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
@@ -35,5 +34,7 @@ lint.select = [
 ]
 lint.ignore = [
     # tests use assert
-    "S101"
+    "S101",
+    # Line too long
+    "E501"
 ]
