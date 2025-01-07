@@ -11,7 +11,7 @@ pillow            11.1.0
 pip               24.3.1
 setuptools        75.7.0
 sympy             1.13.1
-torch             2.7.0.dev20250105
-torchaudio        2.6.0.dev20250105
-torchvision       0.22.0.dev20250105
+torch             2.7.0.dev20250106
+torchaudio        2.6.0.dev20250106
+torchvision       0.22.0.dev20250106
 typing_extensions 4.12.2
