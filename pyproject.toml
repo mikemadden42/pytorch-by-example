@@ -1,21 +1,14 @@
-[tool.poetry]
+[project]
 name = "pytorch-by-example"
 version = "0.1.0"
 description = "PyTorch by Example"
-authors = ["Michael Madden <mikemadden42@icloud.com>"]
-license = "MIT"
-readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.10"
-transformers = "^4.47.1"
-torch = "^2.7.0"
-torchvision = "^0.22.0"
-torchaudio = "^2.7.0"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.13"
+dependencies = [
+    "torch>=2.9.1",
+    "torchaudio>=2.9.1",
+    "torchvision>=0.24.1",
+    "transformers>=4.57.3",
+]
 
 [tool.ruff]
 lint.select = [
