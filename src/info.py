@@ -22,7 +22,7 @@ if torch.cuda.is_available():
         print(f"  - Name: {device_properties.name}")
         print(f"  - Major: {device_properties.major}")
         print(f"  - Minor: {device_properties.minor}")
-        print(f"  - Total Memory: {device_properties.total_memory / 1024 ** 3:.2f} GB")
+        print(f"  - Total Memory: {device_properties.total_memory / 1024**3:.2f} GB")
         print(f"  - Multi Processor Count: {device_properties.multi_processor_count}")
         print(
             f"  - CUDA Capability (Major.Minor): {device_properties.major}.{device_properties.minor}"

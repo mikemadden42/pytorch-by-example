@@ -119,7 +119,7 @@ def classify_image(image_path):
     # 9. Print and store sorted results
     sorted_results = []
     for label, prob in results:
-        result = f"{label}: {prob*100:.1f}%"
+        result = f"{label}: {prob * 100:.1f}%"
         sorted_results.append(result)
         print(result)
 
@@ -140,8 +140,8 @@ if __name__ == "__main__":
         if torch.cuda.is_available():
             logger.info(f"Current CUDA device: {torch.cuda.get_device_name(0)}")
             logger.info("GPU Memory Usage:")
-            logger.info(f"Allocated: {torch.cuda.memory_allocated(0)/1024**2:.2f}MB")
-            logger.info(f"Cached: {torch.cuda.memory_reserved(0)/1024**2:.2f}MB")
+            logger.info(f"Allocated: {torch.cuda.memory_allocated(0) / 1024**2:.2f}MB")
+            logger.info(f"Cached: {torch.cuda.memory_reserved(0) / 1024**2:.2f}MB")
 
         # Check MPS availability
         logger.info(f"MPS available: {torch.mps.is_available()}")

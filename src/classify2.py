@@ -43,7 +43,7 @@ def classify_image(image_path):
 
     # 8. Print results
     for i in range(5):
-        print(f"{class_names[top5_catid[i]]}: {top5_prob[i].item()*100:.1f}%")
+        print(f"{class_names[top5_catid[i]]}: {top5_prob[i].item() * 100:.1f}%")
 
     # 9. Clean up GPU memory
     if torch.cuda.is_available():
@@ -57,8 +57,8 @@ if __name__ == "__main__":
     if torch.cuda.is_available():
         print(f"Current CUDA device: {torch.cuda.get_device_name(0)}")
         print("GPU Memory Usage:")
-        print(f"Allocated: {torch.cuda.memory_allocated(0)/1024**2:.2f}MB")
-        print(f"Cached: {torch.cuda.memory_reserved(0)/1024**2:.2f}MB")
+        print(f"Allocated: {torch.cuda.memory_allocated(0) / 1024**2:.2f}MB")
+        print(f"Cached: {torch.cuda.memory_reserved(0) / 1024**2:.2f}MB")
 
     image_path = "hulk.jpeg"
     classify_image(image_path)
